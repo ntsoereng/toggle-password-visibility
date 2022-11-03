@@ -5,6 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toggle Password Visibilty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form onsubmit="return false">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+          <i class="bi bi-eye-slash" id="toggle-password"></i>
+        </div>
+        <button type="submit" id="submit" class="submit">Sign in</button>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
